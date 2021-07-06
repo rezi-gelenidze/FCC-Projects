@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235, 235, 235);
+    background: url(img/ilia.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    line-height: 1.4em;
+}
+
+
+#main {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5em;
+}
+
+header, article, footer {
+    background-color: rgba(81, 85, 91, .9);
+}
+
+header { 
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    padding: 4em 2em;
+}
+
+article {
+    width: 95%;
+    margin: 1em auto;
+    padding: 2em;
+    border-radius: 8px;
+    padding-bottom: 3em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 5em;
+}
+
+#img-div {
+    width: 500px;
+    max-width: 80%;
+    margin: auto;
+}
+
+#title {
+    margin-bottom: .3em;
+    line-height: 1em;
+    font-size: auto;
+}
+
+figcaption {
+    text-align: right;
+    font-size: .8em;
+    opacity: .8;
+}
+
+#img-div > img {
+    display: block;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+img {
+      border-radius: 8px;
+}
+
+#tribute-info > h2 {
+    text-align: center;
+}
+
+#tribute-info {
+    margin: 2em 0em;
+}
+
+.chapter {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: auto auto;
+    text-indent: .5em;
+    margin: 1em;
+    padding: 1em;
+    max-height: min-content;
+}
+
+.chapt-img {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+.text {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    font-size: 1.2em;
+    margin-top: -1em;
+}
+
+.chapter img {
+    width: 100%;
+}
+
+.chapt-col .text {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.text p {
+    margin: 1em;
+}
+
+.chapt-col .chapt-img {
+    margin: 2em auto; 
+    margin-top: 2em;
+    width: 70%;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.declaration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.declaration img {
+    width: 400px;
+    max-width: 80%;
+    margin: 1em auto;
+}
+
+#more {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .chapter {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin: 1em 0em;
+        padding: 1em 0em;
+    }
+
+    .chapter .text {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .chapter .chapt-img {
+        margin: 2em auto; 
+        margin-top: 2em;
+        width: 90%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .chapt-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chapter img {
+        max-width: 500px;
+        margin: 0px auto;
+    }
+
+    .text p {
+        margin: 1em 0em;
+    }
+
+    #more {
+        font-size: 1em;
+        text-align: center;
+    }
+  }
