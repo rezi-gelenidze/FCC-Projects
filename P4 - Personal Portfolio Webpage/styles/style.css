@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #17252A;
+}
+
+.white {
+    color: #FEFFFF;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #3AAFA9;
+    display: grid;
+    place-items: center;
+    font-size: 2em;
+    animation: show 1s ease-out;
+    box-shadow: #3AAFA9 0px 3px 15px;
+}
+
+.section-head {
+    padding-top: 60px;
+}
+
+header, section {
+    padding-bottom: 80px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    height: .8em;
+    background-color: white;
+    animation: blink 2s infinite;
+}
+
+.page-title {
+    margin-top: 120px;
+    font-size: 5vw;
+}
+
+#about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me > h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+    color: #1f5e5c;
+}
+
+#about-me > article {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-me p {
+    font-size: 1.1em;
+    text-indent: 1em;
+    width: 500px;
+    max-width: 70%;
+}
+
+#about-me img {
+    border-radius: 10px;
+    margin-left: 1.5em;
+    width: 300px;
+    height: 300px;
+    box-shadow: #17252A 2px 2px 15px;
+}
+
+#skills {
+    width: 100%;
+    background-color: #3AAFA9;
+    box-shadow: #3AAFA9 0px 3px 15px;
+    color: #FEFFFF;    
+}
+
+#skill-bar {
+    margin: 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills > h2 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 60px;
+
+}
+
+.skill {
+    height: 180px;
+    width: 180px;
+    background-image: linear-gradient(to top left, #a4eaea , #ffffff);
+    box-shadow: #a4eaea 1px 1px 15px;
+    color: #17252A;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: .5em;
+}
+
+.skill > img {
+    width: 110px;
+    height: 110px;
+}
+
+.skill > span {
+    font-size: 1.1em;
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+    width: 100%;
+    color: #17252A;
+}
+
+.course {
+    position: relative;
+    background-image: linear-gradient(to top left, #a4eaea , #ffffff);
+    box-shadow: #a4eaea 1px 1px 15px;
+    width: 750px;
+    min-height: 120px;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 1fr auto;
+    padding: .5em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+}
+
+.course > a {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color:  #17252A;
+    font-weight: bold;
+}
+
+.course > a:hover {
+    color: #101a1d;
+}
+
+
+.course > img {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    width: 200px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.course > span {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.course > p {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    margin: 1em;
+}
+
+#projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects > h2 {
+    font-size: 1.8em;
+    color: #1f5e5c;
+
+}
+
+#projects-container {
+    width: 95%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    height: 350px;
+    overflow-x: auto;
+    border: 1px solid #d6efee;
+    border-radius: 8px;
+}
+
+.project-tile {
+    width: 280px;
+    height: 300px;
+    background-image: linear-gradient(to right, #e4f7f7 , #ffffff);
+    box-shadow: #a4eaea 1px 1px 5px;
+    border-radius: 10px;
+    margin: 1em;
+    padding: .5em;
+    padding-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile > .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    padding: .5em
+}
+
+.project-tile > img {
+    max-width: 230px;
+    max-height: 140px;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+.description {
+    padding-top: .5em;
+    text-indent: .3em;
+    text-align: center;
+}
+
+.description > a {
+    color: #2B7A78;
+}
+
+.date {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: .9em;
+    color: rgb(171, 171, 171);
+}
+
+
+#contact {
+    width: 100%;
+    background-color: #2B7A78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEFFFF;
+}
+
+#contact > h2 {
+    font-size: 1.8em;
+}
+
+.socials {
+    padding-top: 60px;
+    width: 800px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.social {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social img {
+    width: 60px;
+    height: 60px;
+}
+
+.social > span {
+    font-weight: bold;
+    font-size: .9em;
+}
+
+/*scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #323d41;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #17252A;
+}
+
+@media (max-width: 840px) {
+    .page-title {
+        transition: .5s;
+        font-size: 8vw;
+    }
+
+    #about-me > article {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #about-me p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    #about-me img {
+        margin-top: 2em;
+        margin-left: 0;
+        box-shadow: #17252A 2px 2px 15px;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    .course {
+        width: 95%;
+        height: max-content;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        padding-bottom: 1.8em;
+    }
+    
+    .course > img {
+        width: 250px;
+        height: 125px;
+        margin: .5em;
+    }
+    
+    .course > span {
+        font-size: 1em;
+    }
+    
+    .course > p {
+        margin: .5em;
+        font-size: .9em;
+    }
+}

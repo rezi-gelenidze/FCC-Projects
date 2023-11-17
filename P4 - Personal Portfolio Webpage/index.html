@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src='./scripts/utils.js' defer></script>
+    
+    <link rel='icon' href='https://rezi-gelenidze.github.io/portfolio/img/etc/logo.png'>
+    
+    <title>My portfolio</title>
+</head>
+<body>
+    <nav id='navbar' class="navbar">
+        <img class='nav-logo' src="img/etc/logo.png">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#welcome-section" class="nav-link">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about-me" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills & Experience</a>
+            </li>
+            <ll class='nav-item'>
+                <a href="#projects" class="nav-link">Projects</a>
+            </ll>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <img class='toggler' src='img/etc/bars.svg' />
+        </div>
+    </nav>
+
+    <header id='welcome-section'>
+        <h1 class="page-title">
+            <span id='type-area' class='white'></span>
+            <span class='cursor'></span><br>
+            I am Rezi Gelenidze. <br>
+            Welcome to my portfolio!
+        </h1>
+    </header>
+
+    <section id='about-me'>
+        <h2 class='section-head'>About me</h2>
+        
+        <article>
+            <p>
+                <b>Hello world!</b> I am Rezi, <span id='age'></span> years old from Georgia. I have been learning
+                <i>Computer Science & Programming</i> intensively since 2019-2020.
+                I love this field and I am constantly learning it. I chose web programming path
+                and learned many things about it, but there are far more concepts to learn and <b>I
+                am constantly improving my skills and coding</b>. At this moment I know python and <b>Django</b>
+                back-end framework, basic to advanced <b>HTML/CSS/JS</b>, ReactJS and some other essential concepts for
+                any developer.
+            </p>
+            <img src='img/etc/me.jpg' />
+        </article>
+    </section>
+
+    <section id='skills'>
+        <h2 class='section-head'>Technical Skills</h2>
+        <div id='skill-bar'>
+            <div class='skill'>
+                <img src='img/skills/python.png' />
+                <span>Python 3</span>
+            </div>
+
+            <div class='skill'>
+                <img src='img/skills/javasctipt.png' />
+                <span>Javascript</span>
+            </div>
+
+            <div class='skill'>
+                <img src='img/skills/html5.png' />
+                <span>HTML5</span>
+            </div>
+
+            <div class='skill'>
+                <img src='img/skills/css3.png' />
+                <span>CSS3</span>
+            </div>    
+
+            <div class='skill'>
+                <img src='img/skills/django.png' />
+                <span>Django</span>
+            </div>
+            
+            <div class='skill'>
+                <img src='img/skills/react.png' />
+                <span>React</span>
+            </div>
+        
+            <div class='skill'>
+                <img src='img/skills/bootstrap.png' />
+                <span>Bootstrap</span>
+            </div>   
+
+            <div class='skill'>
+                <img src='img/skills/db.png' />
+                <span>Relational Databases</span>
+            </div>
+
+            <div class='skill'>
+                <img src='img/skills/git.png' />
+                <span>Git version control</span>
+            </div>
+
+            <div class='skill'>
+                <img src='img/skills/linux.png' />
+                <span>Linux and CLI</span>
+            </div>
+
+            <div class='skill'>
+                <img src='img/skills/math.png' />
+                <span>Mathematics</span>
+            </div>
+        </div>
+
+        <h2 class="section-head">Experience</h2>
+        
+        
+        <div id='courses'>
+            <div class='course'>
+                <span>Harvard CS50's Understanding Technology</span>
+                <p>
+                    This is CS50’s introduction to the world of technology. It includes
+                    topics like hardware, internet, security, multimedia and etc.
+                </p>
+                <img src='img/courses/cs50t.png' />
+            </div>
+            <div class='course'>
+                <span>Harvard CS50's Introduction to Computer Science</span>
+                <p>
+                    An introduction to the intellectual enterprises of
+                    computer science and the art of programming.
+                </p>
+                <img src='img/courses/cs50.png'>
+                <a href='https://certificates.cs50.io/c1afafca-a90f-4207-87ac-f5f9ec9b8e03.pdf?size=A4' target="_blank">
+                    View certificate
+                </a>
+            </div>
+            <div class='course'>
+                <span>Harvard CS50's Web Programming with Python and JavaScript</span>
+                <p>
+                    This course picks up where CS50 leaves off, diving more deeply into
+                     the design and implementation of web apps with Python, JavaScript,
+                      and SQL using frameworks like Django, React, and Bootstrap.
+                </p>
+                <img src='img/courses/cs50w.png' />
+                <a href='https://certificates.cs50.io/1ae0aba3-8844-47cc-87b9-d0279e56b64b.pdf?size=A4' target="_blank">
+                    View certificate
+                </a>
+            </div>
+
+            <div class='course'>
+                <span>freeCodeCamp - Responsive Web Design</span>
+                <p>
+                    This is freeCodeCamp Responsive Web Design Course. It includes HTML5/CSS3
+                    fundamentals, flexbox, grid, responsive design principles and etc..
+                </p>
+                <img src='img/courses/fcc.png' />
+                <a href='https://freecodecamp.org/certification/rezi%20gelenidze/responsive-web-design' target="_blank">
+                    View certificate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id='projects'>
+        <h2 class="section-head">Projects</h2>
+
+
+        <div id='projects-container'>
+            <div class="project-tile">
+                <span class='title'>URL shortener</span>
+                <img src='img/previews/shortener.gif' />
+                <p class='description'>
+                    URL shortener web app. Includes url management system for it. <br />
+                    View on 
+                    <a href='https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/Final%20-%20URL%20shortener' target="_blank">
+                        Github
+                    </a> 
+
+                    <br />
+
+                    View 
+                    <a href='https://s50.herokuapp.com/' target="_blank">
+                        Deployment
+                    </a>
+                </p>
+                <span class="date">Jun 10, 2021</span>
+            </div>
+            
+            <div class="project-tile">
+                <span class='title'>twiton.ge</span>
+                <img src='img/previews/twiton.png' />
+                <p class='description'>
+                    Learning courses portal web app with it's content manager. <br />
+                    View 
+                    <a href='https://www.twiton.ge/' target="_blank">
+                        Deployment
+                    </a>
+                </p>
+                <span class="date">May 20, 2021</span>
+            </div>
+            <div class="project-tile">
+                <span class='title'>Network</span>
+                <img src='img/previews/network.gif' />
+                <p class='description'>
+                    CS50w project 4. Twitter like simple social network web app. <br />
+                    View on 
+                    <a href='https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P4%20-%20Network' target="_blank">
+                        Github
+                    </a>
+                </p>
+                <span class="date">May 11, 2021</span>
+            </div>
+            <div class="project-tile">
+                <span class='title'>Commerce</span>
+                <img src='img/previews/commerce.gif' />
+                <p class='description'>
+                    CS50w project 2. Ebay like simple e-commerce web app. <br />
+                    View on 
+                    <a href='https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P2%20-%20Commerce' target="_blank">
+                        Github
+                    </a>
+                </p>
+                <span class="date">Apr 4, 2021</span>
+            </div>
+            <div class="project-tile">
+                <span class='title'>Mail</span>
+                <img src='img/previews/mail.gif' />
+                <p class='description'>
+                    CS50w project 3. Email system with Django and JS. <br />
+                    View on 
+                    <a href='https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P3%20-%20%20Mail' target="_blank">
+                        Github
+                    </a>
+                </p>
+                <span class="date">May 5, 2021</span>
+            </div>
+            <div class="project-tile">
+                <span class='title'>Wiki</span>
+                <img src='img/previews/wiki.gif' />
+                <p class='description'>
+                    CS50w project 1. Wikipedia like web app with content stored with Markdown language. <br />
+                    View on 
+                    <a href='https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P1%20-%20Wiki' target="_blank">
+                        Github
+                    </a>
+                </p>
+                <span class="date">Apr 4, 2021</span>
+            </div>
+        </div>
+    </section>
+
+    <section id='contact'>
+            <h2 class='section-head'>Contact</h2>
+
+            <div class='socials'>
+                <div class='social'>
+                    <a id='profile-link' href='https://github.com/rezi-gelenidze' target="_blank">
+                        <img src='img/contact/github.png'>
+                    </a>
+                    <span>@rezi-gelenidze</span> 
+                </div>
+
+                <div class='social'>
+                    <a href='https://www.facebook.com/gelenidze.rezi' target="_blank">
+                        <img src='img/contact/facebook.png'>
+                    </a>
+                    <span>@Rezi Gelenidze</span> 
+                </div>
+
+                <div class='social'>
+                    <a href='https://www.instagram.com/rezi.gelenidze/' target="_blank">
+                        <img src='img/contact/instagram.png'>
+                    </a>
+                    <span>@rezi.gelenidze</span> 
+                </div>
+
+                <div class='social'>
+                    <a href='#'>
+                        <img src='img/contact/email.png'>
+                    </a>
+                    <span>rezi.gelenidze7@gmail.com</span> 
+                </div>
+            </div>
+    </section>
+
+    <script>
+        // script for responsive navbar collapsing
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
